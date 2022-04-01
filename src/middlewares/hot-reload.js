@@ -248,7 +248,7 @@ module.exports = function HotReloadMiddleware(broker) {
 			if (!watchItem.services.includes(service.fullName))
 				watchItem.services.push(service.fullName);
 
-			watchItem.others = _.uniq([].concat(watchItem.others, parents || []));
+			//watchItem.others = _.uniq([].concat(watchItem.others, parents || []));
 		} else if (isMoleculerConfig(fName)) {
 			const watchItem = getWatchItem(fName);
 			watchItem.brokerRestart = true;
