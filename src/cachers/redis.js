@@ -38,6 +38,8 @@ class RedisCacher extends BaseCacher {
 		});
 
 		this.pingIntervalHandle = null;
+
+		this.logger.debug("Redis Options : ", this.opts);
 	}
 
 	/**

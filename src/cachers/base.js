@@ -48,6 +48,7 @@ class Cacher {
 
 		if (this.broker) {
 			this.logger = broker.getLogger("cacher");
+			this.logger.debug("Cacher Options : ", this.opts);
 
 			if (this.opts.prefix) {
 				this.prefix = this.opts.prefix + "-";
